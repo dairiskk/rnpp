@@ -184,13 +184,22 @@ export default function RussianPage() {
             </a>
           </nav>
 
-          <a
-            href="tel:+37129829648"
-            className="inline-flex min-h-11 shrink-0 items-center justify-center bg-[#2f9439] px-4 text-sm font-black text-white transition hover:bg-[#252344] sm:px-5"
-          >
-            Позвонить
-            <span className="hidden sm:inline">&nbsp;+371 29829648</span>
-          </a>
+          <div className="flex shrink-0 items-center gap-2">
+            <a
+              href="/"
+              hrefLang="lv-LV"
+              className="inline-flex min-h-11 items-center justify-center border border-[#dfe7dc] px-3 text-xs font-black text-[#252344] transition hover:border-[#2f9439] hover:text-[#2f9439] lg:hidden"
+            >
+              LV
+            </a>
+            <a
+              href="tel:+37129829648"
+              className="inline-flex min-h-11 items-center justify-center bg-[#2f9439] px-4 text-sm font-black text-white transition hover:bg-[#252344] sm:px-5"
+            >
+              Позвонить
+              <span className="hidden sm:inline">&nbsp;+371 29829648</span>
+            </a>
+          </div>
         </div>
       </header>
 
