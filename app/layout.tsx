@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   authors: [{ name: "RNNP" }],
   creator: "RNNP",
   publisher: "RNNP",
+  verification: {
+    google: "yGuvGlncY9DoIcDUeWZnNnYVuOtiP3-cIZHTYRLTgUU",
+  },
   icons: {
     icon: "/logo.png",
     shortcut: "/logo.png",

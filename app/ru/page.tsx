@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 const services = [
   {
@@ -179,19 +180,19 @@ export default function RussianPage() {
             <a className="hover:text-[#2f9439]" href="#contact">
               Контакты
             </a>
-            <a className="hover:text-[#2f9439]" href="/" hrefLang="lv-LV">
+            <Link className="hover:text-[#2f9439]" href="/" hrefLang="lv-LV">
               LV
-            </a>
+            </Link>
           </nav>
 
           <div className="flex shrink-0 items-center gap-2">
-            <a
+            <Link
               href="/"
               hrefLang="lv-LV"
               className="inline-flex min-h-11 items-center justify-center border border-[#dfe7dc] px-3 text-xs font-black text-[#252344] transition hover:border-[#2f9439] hover:text-[#2f9439] lg:hidden"
             >
               LV
-            </a>
+            </Link>
             <a
               href="tel:+37129829648"
               className="inline-flex min-h-11 items-center justify-center bg-[#2f9439] px-4 text-sm font-black text-white transition hover:bg-[#252344] sm:px-5"
