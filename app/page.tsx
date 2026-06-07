@@ -174,7 +174,7 @@ export default function Home() {
             <h1 className="mt-5 max-w-full break-words text-[1.82rem] font-black leading-[1.14] tracking-normal hyphens-auto [overflow-wrap:anywhere] min-[420px]:text-[2.05rem] sm:max-w-3xl sm:text-6xl sm:leading-[1.02] lg:text-7xl">
               Inženierkomunikācijas bez liekas rakšanas.
             </h1>
-            <p className="mt-5 max-w-2xl text-base leading-7 text-white/74 sm:mt-6 sm:text-xl sm:leading-8">
+            <p className="mt-5 max-w-2xl text-base leading-7 text-white/88 sm:mt-6 sm:text-xl sm:leading-8">
               RNNP ierīko cauruļvadus un kabeļu līnijas ar beztranšeju metodi
               vietās, kur svarīga ir kārtība, precizitāte un minimāla ietekme
               uz segumu.
@@ -203,8 +203,9 @@ export default function Home() {
               width={900}
               height={1350}
               priority
-              quality={70}
-              sizes="(min-width: 1024px) 56vw, 100vw"
+              fetchPriority="high"
+              quality={60}
+              sizes="(max-width: 639px) calc(100vw - 32px), (max-width: 1023px) calc(100vw - 48px), (max-width: 1279px) 45vw, 520px"
               className="h-[230px] w-full object-cover sm:h-[420px] lg:h-[560px]"
             />
           </div>
@@ -263,8 +264,8 @@ export default function Home() {
               alt="HDPE caurules ievilkšana ar beztranšeju metodi"
               width={1000}
               height={750}
-              quality={70}
-              sizes="(min-width: 1024px) 52vw, 100vw"
+              quality={60}
+              sizes="(max-width: 639px) calc(100vw - 32px), (max-width: 1023px) calc(100vw - 48px), (max-width: 1279px) 50vw, 630px"
               className="h-[260px] w-full object-cover sm:h-[420px]"
             />
           </div>
@@ -372,7 +373,7 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid gap-4 self-center text-sm leading-6 text-white/76 sm:leading-7">
+          <div className="grid gap-4 self-center text-sm leading-6 text-white/88 sm:leading-7">
             <div className="grid gap-3 text-base font-black">
               <a
                 href="tel:+37129829648"
@@ -393,19 +394,19 @@ export default function Home() {
                 Rekvizīti
               </p>
               <dl className="grid gap-x-5 gap-y-1.5 sm:grid-cols-[8.5rem_1fr] sm:gap-y-2 lg:grid-cols-[9rem_1fr]">
-                <dt className="text-white/48">Uzņēmums</dt>
+                <dt className="text-white/70">Uzņēmums</dt>
                 <dd className="font-bold text-white">SIA &quot;RNNP&quot;</dd>
-                <dt className="text-white/48">Adrese</dt>
+                <dt className="text-white/70">Adrese</dt>
                 <dd>Doriņi, Skaistkalnes pagasts, Bauskas novads, LV-3924</dd>
-                <dt className="text-white/48">Reģ. nr.</dt>
+                <dt className="text-white/70">Reģ. nr.</dt>
                 <dd>40203569493</dd>
-                <dt className="text-white/48">PVN nr.</dt>
+                <dt className="text-white/70">PVN nr.</dt>
                 <dd>LV40203569493</dd>
-                <dt className="text-white/48">SWIFT</dt>
+                <dt className="text-white/70">SWIFT</dt>
                 <dd>HABALV22</dd>
-                <dt className="text-white/48">IBAN</dt>
+                <dt className="text-white/70">IBAN</dt>
                 <dd className="break-all">LV08HABA0551058012081</dd>
-                <dt className="text-white/48">Papildu tel.</dt>
+                <dt className="text-white/70">Papildu tel.</dt>
                 <dd>
                   <a className="hover:text-[#62bd68]" href="tel:+37123305833">
                     +371 23 305 833
