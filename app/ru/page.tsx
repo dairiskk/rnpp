@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 const services = [
   {
@@ -47,9 +48,9 @@ const faqs = [
   },
 ];
 
-const equipmentImage = "/hdd-equipment.png";
+const equipmentImage = "/hdd-equipment-optimized.jpg";
 
-const pipeInstallImage = "/pipe-installation.jpg";
+const pipeInstallImage = "/pipe-installation-optimized.jpg";
 
 export const metadata: Metadata = {
   title: "Горизонтальное бурение и прокол под дорогой в Латвии",
@@ -102,7 +103,7 @@ export default function RussianPage() {
         url: `${siteUrl}/ru`,
         telephone: "+37129829648",
         email: "rnnpinfo@gmail.com",
-        image: equipmentImage,
+        image: `${siteUrl}${equipmentImage}`,
         logo: `${siteUrl}/logo.png`,
         address: {
           "@type": "PostalAddress",
@@ -155,9 +156,11 @@ export default function RussianPage() {
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-10">
           <a href="/ru" className="flex min-w-0 items-center gap-3" aria-label="RNNP">
             <span className="grid h-14 w-24 shrink-0 place-items-center bg-white sm:h-16 sm:w-32">
-              <img
+              <Image
                 src="/logo.png"
                 alt="RNNP logo"
+                width={256}
+                height={128}
                 className="max-h-full max-w-full object-contain"
               />
             </span>
@@ -223,9 +226,14 @@ export default function RussianPage() {
           </div>
 
           <div className="overflow-hidden bg-[#1f1e3e]">
-            <img
+            <Image
               src={equipmentImage}
               alt="Техника для горизонтального бурения на объекте"
+              width={900}
+              height={1350}
+              priority
+              quality={68}
+              sizes="(min-width: 1024px) 56vw, 100vw"
               className="h-[230px] w-full object-cover sm:h-[420px] lg:h-[560px]"
             />
           </div>
@@ -279,9 +287,13 @@ export default function RussianPage() {
       <section className="bg-white">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-[1.08fr_0.92fr] lg:px-10 lg:py-24">
           <div className="overflow-hidden bg-[#1f1e3e]">
-            <img
+            <Image
               src={pipeInstallImage}
               alt="Протяжка HDPE трубы бестраншейным методом"
+              width={1000}
+              height={750}
+              quality={65}
+              sizes="(min-width: 1024px) 52vw, 100vw"
               className="h-[260px] w-full object-cover sm:h-[420px]"
             />
           </div>
