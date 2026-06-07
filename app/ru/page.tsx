@@ -444,6 +444,12 @@ export default function RussianPage() {
                 <dd>HABALV22</dd>
                 <dt className="text-white/48">IBAN</dt>
                 <dd className="break-all">LV08HABA0551058012081</dd>
+                <dt className="text-white/48">Доп. тел.</dt>
+                <dd>
+                  <a className="hover:text-[#62bd68]" href="tel:+37123305833">
+                    +371 23 305 833
+                  </a>
+                </dd>
               </dl>
             </div>
           </div>
