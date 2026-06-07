@@ -132,16 +132,16 @@ export default function Home() {
             className="hidden items-center gap-8 text-sm font-semibold text-[#514f70] lg:flex"
             aria-label="Galvenā navigācija"
           >
-            <a className="hover:text-[#2f9439]" href="#services">
+            <a className="hover:text-[#1f7a2e]" href="#services">
               Pakalpojumi
             </a>
-            <a className="hover:text-[#2f9439]" href="#process">
+            <a className="hover:text-[#1f7a2e]" href="#process">
               Process
             </a>
-            <a className="hover:text-[#2f9439]" href="#contact">
+            <a className="hover:text-[#1f7a2e]" href="#contact">
               Kontakti
             </a>
-            <a className="hover:text-[#2f9439]" href="/ru" hrefLang="ru-LV">
+            <a className="hover:text-[#1f7a2e]" href="/ru" hrefLang="ru-LV">
               RU
             </a>
           </nav>
@@ -150,13 +150,13 @@ export default function Home() {
             <a
               href="/ru"
               hrefLang="ru-LV"
-              className="inline-flex min-h-11 items-center justify-center border border-[#dfe7dc] px-3 text-xs font-black text-[#252344] transition hover:border-[#2f9439] hover:text-[#2f9439] lg:hidden"
+              className="inline-flex min-h-11 items-center justify-center border border-[#dfe7dc] px-3 text-xs font-black text-[#252344] transition hover:border-[#1f7a2e] hover:text-[#1f7a2e] lg:hidden"
             >
               RU
             </a>
             <a
               href="tel:+37129829648"
-              className="inline-flex min-h-11 items-center justify-center bg-[#2f9439] px-4 text-sm font-black text-white transition hover:bg-[#252344] sm:px-5"
+              className="inline-flex min-h-11 items-center justify-center bg-[#1f7a2e] px-4 text-sm font-black text-white transition hover:bg-[#252344] sm:px-5"
             >
               Zvanīt
               <span className="hidden sm:inline">&nbsp;+371 29829648</span>
@@ -183,7 +183,7 @@ export default function Home() {
             <div className="mt-7 grid gap-3 sm:flex">
               <a
                 href="mailto:rnnpinfo@gmail.com"
-                className="inline-flex min-h-12 items-center justify-center bg-[#2f9439] px-6 text-sm font-black text-white transition hover:bg-white hover:text-[#252344]"
+                className="inline-flex min-h-12 items-center justify-center bg-[#1f7a2e] px-6 text-sm font-black text-white transition hover:bg-white hover:text-[#252344]"
               >
                 Pieprasīt piedāvājumu
               </a>
@@ -230,7 +230,7 @@ export default function Home() {
       >
         <div className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr] lg:gap-12">
           <div>
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#2f9439]">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#1f7a2e]">
               Pakalpojumi
             </p>
             <h2 className="mt-3 max-w-xl text-3xl font-black leading-tight sm:text-5xl">
@@ -270,7 +270,7 @@ export default function Home() {
             />
           </div>
           <div className="flex flex-col justify-center">
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#2f9439]">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#1f7a2e]">
               Tehnika un pieeja
             </p>
             <h2 className="mt-3 text-3xl font-black leading-tight sm:text-5xl">
@@ -287,7 +287,7 @@ export default function Home() {
       <section className="border-y border-[#dfe7dc] bg-[#f6f8f4]">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-[0.85fr_1.15fr] lg:px-10">
           <div>
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#2f9439]">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#1f7a2e]">
               Darbu teritorija
             </p>
             <h2 className="mt-3 max-w-xl text-3xl font-black leading-tight sm:text-5xl">
@@ -313,7 +313,7 @@ export default function Home() {
       >
         <div className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr] lg:gap-12">
           <div>
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#2f9439]">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#1f7a2e]">
               Process
             </p>
             <h2 className="mt-3 max-w-xl text-3xl font-black leading-tight sm:text-5xl">
@@ -324,7 +324,7 @@ export default function Home() {
           <div className="divide-y divide-[#dfe7dc] border-y border-[#dfe7dc] bg-white">
             {workSteps.map((item, index) => (
               <div key={item} className="grid grid-cols-[3rem_1fr] gap-4 p-5 sm:p-6">
-                <span className="text-sm font-black text-[#2f9439]">
+                <span className="text-sm font-black text-[#1f7a2e]">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <p className="text-base font-bold leading-7 text-[#252344] sm:text-lg">
@@ -339,7 +339,7 @@ export default function Home() {
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20 lg:px-10 lg:py-24">
           <div className="max-w-3xl">
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#2f9439]">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#1f7a2e]">
               Biežākie jautājumi
             </p>
             <h2 className="mt-3 text-3xl font-black leading-tight sm:text-5xl">
@@ -377,7 +377,7 @@ export default function Home() {
             <div className="grid gap-3 text-base font-black">
               <a
                 href="tel:+37129829648"
-                className="bg-[#2f9439] px-6 py-4 text-center text-white transition hover:bg-white hover:text-[#252344]"
+                className="bg-[#1f7a2e] px-6 py-4 text-center text-white transition hover:bg-white hover:text-[#252344]"
               >
                 +371 29829648
               </a>
