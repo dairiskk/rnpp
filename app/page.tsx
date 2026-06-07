@@ -203,7 +203,7 @@ export default function Home() {
               width={900}
               height={1350}
               priority
-              quality={68}
+              quality={70}
               sizes="(min-width: 1024px) 56vw, 100vw"
               className="h-[230px] w-full object-cover sm:h-[420px] lg:h-[560px]"
             />
@@ -263,7 +263,7 @@ export default function Home() {
               alt="HDPE caurules ievilkšana ar beztranšeju metodi"
               width={1000}
               height={750}
-              quality={65}
+              quality={70}
               sizes="(min-width: 1024px) 52vw, 100vw"
               className="h-[260px] w-full object-cover sm:h-[420px]"
             />
@@ -372,19 +372,41 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid gap-3 self-center text-base font-black">
-            <a
-              href="tel:+37129829648"
-              className="bg-[#2f9439] px-6 py-4 text-center text-white transition hover:bg-white hover:text-[#252344]"
-            >
-              +371 29829648
-            </a>
-            <a
-              href="mailto:rnnpinfo@gmail.com"
-              className="border border-white/22 px-6 py-4 text-center text-white transition hover:border-white"
-            >
-              rnnpinfo@gmail.com
-            </a>
+          <div className="grid gap-5 self-center text-sm leading-7 text-white/76">
+            <div className="grid gap-3 text-base font-black">
+              <a
+                href="tel:+37129829648"
+                className="bg-[#2f9439] px-6 py-4 text-center text-white transition hover:bg-white hover:text-[#252344]"
+              >
+                +371 29829648
+              </a>
+              <a
+                href="mailto:rnnpinfo@gmail.com"
+                className="border border-white/22 px-6 py-4 text-center text-white transition hover:border-white"
+              >
+                rnnpinfo@gmail.com
+              </a>
+            </div>
+
+            <div className="border-t border-white/16 pt-5">
+              <p className="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#62bd68] lg:text-right">
+                Rekvizīti
+              </p>
+              <dl className="grid gap-x-5 gap-y-2 sm:grid-cols-[8.5rem_1fr] lg:grid-cols-[9rem_1fr]">
+                <dt className="text-white/48">Uzņēmums</dt>
+                <dd className="font-bold text-white">SIA &quot;RNNP&quot;</dd>
+                <dt className="text-white/48">Adrese</dt>
+                <dd>Doriņi, Skaistkalnes pagasts, Bauskas novads, LV-3924</dd>
+                <dt className="text-white/48">Reģ. nr.</dt>
+                <dd>40203569493</dd>
+                <dt className="text-white/48">PVN nr.</dt>
+                <dd>LV40203569493</dd>
+                <dt className="text-white/48">SWIFT</dt>
+                <dd>HABALV22</dd>
+                <dt className="text-white/48">IBAN</dt>
+                <dd className="break-all">LV08HABA0551058012081</dd>
+              </dl>
+            </div>
           </div>
         </div>
       </section>
