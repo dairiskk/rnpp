@@ -171,8 +171,8 @@ export default function Home() {
             <p className="w-fit bg-white/8 px-3 py-2 text-[11px] font-black uppercase tracking-[0.18em] text-[#62bd68]">
               Beztranšeju inženierkomunikācijas
             </p>
-            <h1 className="mt-5 max-w-full break-words text-[1.82rem] font-black leading-[1.14] tracking-normal hyphens-auto [overflow-wrap:anywhere] min-[420px]:text-[2.05rem] sm:max-w-3xl sm:text-6xl sm:leading-[1.02] lg:text-7xl">
-              Inženierkomunikācijas bez liekas rakšanas.
+            <h1 className="mt-5 max-w-full text-[1.82rem] font-black leading-[1.14] tracking-normal [overflow-wrap:normal] min-[420px]:text-[2.05rem] sm:max-w-3xl sm:text-6xl sm:leading-[1.02] lg:text-7xl">
+              Komunikāciju izbūve bez liekas rakšanas.
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-7 text-white/88 sm:mt-6 sm:text-xl sm:leading-8">
               RNNP ierīko cauruļvadus un kabeļu līnijas ar beztranšeju metodi
