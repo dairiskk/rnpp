@@ -152,7 +152,7 @@ export default function RussianPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <header className="border-b border-[#dfe7dc] bg-white text-[#252344]">
+      <header className="sticky top-0 z-50 border-b border-[#dfe7dc] bg-white/95 text-[#252344] shadow-sm backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-10">
           <a href="/ru" className="flex min-w-0 items-center gap-3" aria-label="RNNP">
             <span className="grid h-14 w-24 shrink-0 place-items-center bg-white sm:h-16 sm:w-32">
@@ -401,7 +401,7 @@ export default function RussianPage() {
       </section>
 
       <section id="contact" className="bg-[#252344] text-white">
-        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-[1fr_auto] lg:px-10">
+        <div className="mx-auto grid max-w-7xl gap-7 px-4 py-10 sm:px-6 sm:py-16 lg:grid-cols-[1fr_auto] lg:px-10">
           <div>
             <p className="text-xs font-black uppercase tracking-[0.18em] text-[#62bd68]">
               Контакты
@@ -411,7 +411,7 @@ export default function RussianPage() {
             </h2>
           </div>
 
-          <div className="grid gap-5 self-center text-sm leading-7 text-white/76">
+          <div className="grid gap-4 self-center text-sm leading-6 text-white/76 sm:leading-7">
             <div className="grid gap-3 text-base font-black">
               <a
                 href="tel:+37129829648"
@@ -427,11 +427,11 @@ export default function RussianPage() {
               </a>
             </div>
 
-            <div className="border-t border-white/16 pt-5">
+            <div className="border-t border-white/16 pt-4 sm:pt-5">
               <p className="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#62bd68] lg:text-right">
                 Реквизиты
               </p>
-              <dl className="grid gap-x-5 gap-y-2 sm:grid-cols-[8.5rem_1fr] lg:grid-cols-[9rem_1fr]">
+              <dl className="grid gap-x-5 gap-y-1.5 sm:grid-cols-[8.5rem_1fr] sm:gap-y-2 lg:grid-cols-[9rem_1fr]">
                 <dt className="text-white/48">Компания</dt>
                 <dd className="font-bold text-white">SIA &quot;RNNP&quot;</dd>
                 <dt className="text-white/48">Адрес</dt>
