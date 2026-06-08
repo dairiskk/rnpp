@@ -303,7 +303,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <header className="sticky top-0 z-50 border-b border-[#dfe7dc] bg-white/95 text-[#252344] shadow-sm backdrop-blur">
+      <header className="sticky top-0 z-50 border-b border-[#dfe7dc] bg-white text-[#252344] shadow-sm">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-10">
           <a href="#" className="flex min-w-0 items-center gap-3" aria-label="RNNP">
             <span className="grid h-14 w-24 shrink-0 place-items-center bg-white sm:h-16 sm:w-32">
