@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -197,7 +198,7 @@ export const metadata: Metadata = {
     "инженерные сети Латвия",
     "прокладка инженерных сетей",
     "подключение инженерных коммуникаций",
-    "коммуникации для частного дома",
+    "коммуникации для ��астного дома",
     "коммуникации для предприятий",
     "бестраншейные работы",
     "прокладка коммуникаций без траншеи",
@@ -282,6 +283,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         {children}
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
