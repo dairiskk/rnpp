@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     google: "yGuvGlncY9DoIcDUeWZnNnYVuOtiP3-cIZHTYRLTgUU",
   },
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
   },
   alternates: {
     canonical: "/",
