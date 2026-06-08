@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 
 const services = [
@@ -12,6 +13,10 @@ const services = [
   {
     title: "Kabeļu līniju izbūve",
     text: "Risinājumi elektrības, sakaru un citu inženierkomunikāciju ievilkšanai.",
+  },
+  {
+    title: "Elektrokabeļu trases saules un vēja projektiem",
+    text: "Pazemes kabeļu ievilkšana, aizsargcaurules un urbumi elektroapgādes pieslēgumiem saules paneļu parkiem un vēja enerģijas objektiem.",
   },
 ];
 
@@ -51,6 +56,59 @@ const equipmentImage = "/hdd-equipment-optimized.jpg";
 
 const pipeInstallImage = "/pipe-installation-optimized.jpg";
 
+export const metadata: Metadata = {
+  title: "Horizontālā urbšana un pazemes kabeļu trases Latvijā",
+  description:
+    "RNNP veic horizontāli vadāmo urbšanu, beztranšeju cauruļvadu un kabeļu līniju izbūvi, kā arī pazemes elektrokabeļu trases saules parkiem un vēja enerģijas objektiem Latvijā.",
+  alternates: {
+    canonical: "/",
+    languages: {
+      "lv-LV": "/",
+      "ru-LV": "/ru",
+      "x-default": "/",
+    },
+  },
+  keywords: [
+    "horizontālā urbšana",
+    "horizontāli vadāmā urbšana",
+    "horizontālā urbšana Latvijā",
+    "HDD urbšana Latvijā",
+    "beztranšeju urbšana",
+    "beztranšeju metode",
+    "beztranšeju cauruļvadi",
+    "komunikāciju izbūve bez tranšejas",
+    "cauruļu ievilkšana zem ceļa",
+    "kabeļu ievilkšana zem ceļa",
+    "komunikāciju ievilkšana zem ceļa",
+    "cauruļvadu ierīkošana",
+    "aizsargcauruļu ievilkšana",
+    "ūdensvada pieslēgums",
+    "kanalizācijas pieslēgums",
+    "kabeļu līniju izbūve",
+    "elektrokabeļu trases",
+    "pazemes kabeļu izbūve",
+    "elektroapgādes pieslēgumi",
+    "kabeļu trases saules parkiem",
+    "elektrokabeļu izbūve saules parkam",
+    "pazemes kabeļi saules paneļu parkiem",
+    "pazemes kabeļi vēja parkiem",
+    "vēja parku elektrokabeļi",
+    "vēja enerģijas objektu kabeļu trases",
+    "inženierkomunikāciju izbūve",
+    "RNNP",
+  ],
+  openGraph: {
+    type: "website",
+    locale: "lv_LV",
+    alternateLocale: ["ru_LV"],
+    url: "/",
+    siteName: "RNNP",
+    title: "RNNP | Horizontālā urbšana un pazemes kabeļu trases",
+    description:
+      "Beztranšeju cauruļvadu, kabeļu līniju un elektrokabeļu trašu izbūve saules parkiem un vēja enerģijas objektiem Latvijā.",
+  },
+};
+
 export default function Home() {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://rnnp.lv";
   const jsonLd = {
@@ -85,6 +143,23 @@ export default function Home() {
             areaServed: "Latvija",
           },
         })),
+      },
+      {
+        "@type": "Service",
+        "@id": `${siteUrl}/#hdd-cable-service`,
+        name: "Horizontālā urbšana un pazemes elektrokabeļu trases",
+        alternateName: [
+          "Beztranšeju urbšana",
+          "Komunikāciju izbūve bez tranšejas",
+          "Kabeļu trases saules parkiem",
+          "Pazemes kabeļi vēja parkiem",
+        ],
+        provider: {
+          "@id": `${siteUrl}/#business`,
+        },
+        areaServed: "Latvija",
+        description:
+          "RNNP veic horizontāli vadāmo urbšanu, cauruļvadu un kabeļu līniju izbūvi, kā arī pazemes elektrokabeļu trases saules parkiem un vēja enerģijas objektiem.",
       },
       {
         "@type": "WebSite",
@@ -300,8 +375,9 @@ export default function Home() {
               RNNP veic beztranšeju komunikāciju izbūvi privātmājām,
               uzņēmumiem, saimnieciskām teritorijām un pašvaldību objektiem.
               Visbiežāk darbi saistīti ar ūdensvada, kanalizācijas,
-              elektrības, sakaru un aizsargcauruļu ievilkšanu vietās, kur
-              tranšejas rakšana būtu dārga, laikietilpīga vai bojātu segumu.
+              elektrības, sakaru, saules parku, vēja enerģijas objektu un
+              aizsargcauruļu ievilkšanu vietās, kur tranšejas rakšana būtu
+              dārga, laikietilpīga vai bojātu segumu.
             </p>
           </div>
         </div>
